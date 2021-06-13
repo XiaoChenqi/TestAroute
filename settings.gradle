@@ -1,0 +1,4 @@
+include ':app', ':prisonphoto',
+        ':commonlib',
+        ':module_main',
+        ':washTakePhoto'

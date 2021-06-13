@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../TestAroute.iml" filepath="$PROJECT_DIR$/../TestAroute.iml" group="TestAroute" />
+      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" group="TestAroute/app" />
+      <module fileurl="file://$PROJECT_DIR$/../commonlib/commonlib.iml" filepath="$PROJECT_DIR$/../commonlib/commonlib.iml" group="TestAroute/commonlib" />
+      <module fileurl="file://$PROJECT_DIR$/../module_main/module_main.iml" filepath="$PROJECT_DIR$/../module_main/module_main.iml" group="TestAroute/module_main" />
+      <module fileurl="file://$PROJECT_DIR$/../prisonphoto/prisonphoto.iml" filepath="$PROJECT_DIR$/../prisonphoto/prisonphoto.iml" group="TestAroute/prisonphoto" />
+      <module fileurl="file://$PROJECT_DIR$/washTakePhoto.iml" filepath="$PROJECT_DIR$/washTakePhoto.iml" group="TestAroute/washTakePhoto" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.WashWaterSubmitActivity">
+
+    <EditText
+        android:id="@+id/barCodeEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:hint="商品条码"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/barNameEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="品牌名称"
+        app:layout_constraintStart_toStartOf="@+id/barCodeEt"
+        app:layout_constraintTop_toBottomOf="@+id/barCodeEt" />
+
+    <EditText
+        android:id="@+id/productNameEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="产品名称"
+        app:layout_constraintStart_toStartOf="@+id/barCodeEt"
+        app:layout_constraintTop_toBottomOf="@+id/barNameEt" />
+
+    <EditText
+        android:id="@+id/productFormEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="产品形态"
+        app:layout_constraintStart_toStartOf="@+id/productNameEt"
+        app:layout_constraintTop_toBottomOf="@+id/productNameEt" />
+
+    <EditText
+        android:id="@+id/productModelEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="产品型号"
+        app:layout_constraintStart_toStartOf="@+id/productFormEt"
+        app:layout_constraintTop_toBottomOf="@+id/productFormEt" />
+
+    <EditText
+        android:id="@+id/potencyEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="浓度"
+        app:layout_constraintStart_toStartOf="@+id/productModelEt"
+        app:layout_constraintTop_toBottomOf="@+id/productModelEt" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="提交"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/potencyEt" />
+</androidx.constraintlayout.widget.ConstraintLayout>

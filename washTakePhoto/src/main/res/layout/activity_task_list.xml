@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.TaskListActivity">
+
+
+    <TextView
+        android:id="@+id/unstartTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="@dimen/padTextviewMin"
+        android:text="未开始"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/allTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="@dimen/padTextviewMin"
+        android:text="全部的"
+
+        android:textColor="@color/colorWhite"
+        app:layout_constraintStart_toEndOf="@+id/passedTv"
+        app:layout_constraintTop_toBottomOf="@+id/startingTv" />
+
+    <TextView
+        android:id="@+id/passedTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="@dimen/padTextviewMin"
+        android:text="已审核"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintStart_toStartOf="@+id/unstartTv"
+        app:layout_constraintTop_toBottomOf="@+id/unstartTv" />
+
+    <TextView
+        android:id="@+id/finishTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="@dimen/padTextviewMin"
+        android:text="已完成"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintStart_toEndOf="@+id/startingTv"
+        app:layout_constraintTop_toTopOf="@+id/startingTv" />
+
+    <TextView
+        android:id="@+id/startingTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="@dimen/padTextviewMin"
+        android:text="进行中"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintStart_toEndOf="@+id/unstartTv"
+        app:layout_constraintTop_toTopOf="@+id/unstartTv" />
+
+    <TextView
+        android:id="@+id/startAndUnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorLightRed"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:padding="@dimen/padTextviewMin"
+        android:text="进行中和未开始"
+        app:layout_constraintStart_toStartOf="@+id/finishTv"
+        app:layout_constraintTop_toBottomOf="@+id/finishTv" />
+
+    <TextView
+        android:id="@+id/currentStateTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="qweqwe"
+        android:textColor="@color/blue"
+        app:layout_constraintStart_toStartOf="@+id/unstartTv"
+        app:layout_constraintTop_toBottomOf="@+id/passedTv" />
+
+    <TextView
+        android:id="@+id/taskNumTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/currentStateTv"
+        app:layout_constraintTop_toTopOf="@+id/currentStateTv" />
+
+    <com.ezdata.commonlib.widget.ParallaxPtrFrameLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentStateTv"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.github.jdsjlzx.recyclerview.LRecyclerView
+            android:id="@+id/listTaskRv"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="@color/bg_gray" />
+    </com.ezdata.commonlib.widget.ParallaxPtrFrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
